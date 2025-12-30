@@ -1,0 +1,22 @@
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
+
+name: 'Auto Labeler Action'
+description: 'Automatically lables PRs based on changed files.'
+author: 'Anzul Aqeel'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: '${{ github.token }}'
+  config:
+    description: 'Configuration file path (JSON)'
+    required: true
+    default: '.github/label-config.json'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'tag'
+  color: 'blue'
+
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
